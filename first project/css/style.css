@@ -1,7 +1,19 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway:300,400|Lato:300');
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,200,300|Lato:300');
 
 * {
   font-family: "Raleway";
+}
+
+p::selection {
+ background: black;
+ color: white;
+ opacity: 1;
+}
+
+h2::selection {
+ background: black;
+ color: white;
+ opacity: 1;
 }
 
 body {
@@ -57,11 +69,8 @@ h1 {
 
 .social-items {
  float: right;
- padding: 55px;
- background: rgba(0,0,0,0.7);
- height: 97.5vh;
- margin-top: -700px;
- width: 20px;
+ padding: 85px;
+ margin-top: -711px;
 }
 
 .social-items li {
@@ -115,6 +124,9 @@ h1 {
     .figure-7 {
      grid-column: span 3;
     }
+    .figure-8 {
+     grid-column: span 3;
+    }
 }
 
 .figure-1 {
@@ -157,10 +169,11 @@ h1 {
  margin: 0;
  padding: 0;
  transition: all .5s ease-in;
+ cursor: pointer;
 }
 
 .figure-img:hover {
- transform: scale(2.5);
+ transform: scale(1.5);
  transition: all .5s ease-in;
  filter: brightness(.5);
 }
@@ -171,29 +184,56 @@ h1 {
  color: #fff;
 }
 
+.info-1 {
+ background:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(../img/bg-text.jpg);
+ object-fit: cover;
+ background-size: 50%;
+ background-attachment: fixed;
+}
+
+.info-2 {
+ background:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(../img/bg.jpg);
+ object-fit: cover;
+ background-size: 50%;
+ background-attachment: fixed;
+}
+
+.info-2 .info-link {
+ top: -10px;
+ position: relative;
+}
+
 h2 {
- font-size: 45px;
+ font-size: 65px;
  font-family: 'Raleway', sans-serif;
  margin-bottom: 1em;
- margin-top: 50px;
+ margin-top: 90px;
+ text-align: center;
 }
 
 p {
  margin-bottom: 3em;
  font-weight: lighter;
- font-size: 25px;
+ font-size: 30px;
+ text-align: center;
 }
 
 .info-link {
  text-decoration: none;
  color: aqua;
  font-size: 25px;
+ margin-left: 30%;
+ border: 1px solid #10eae6;
+ padding: 30px 50px;
+ border-radius: 5px;
 }
 
-
-
-
-
+.info-link:hover {
+ background-color: rgb(89, 166, 166);
+ color: azure;
+ transition: all 0.3s ease-in-out; 
+ border-color: rgb(89, 166, 166);
+}
 
 
 
