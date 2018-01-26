@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400|Lato:300');
+
+* {
+  font-family: "Raleway";
+}
 
 body {
  margin: 0;
@@ -27,7 +32,7 @@ h1 {
  text-align: center;
 }
 
-p {
+.container p {
  color: white;
  font-family: Source Sans Pro;
  font-weight: lighter;
@@ -86,53 +91,133 @@ p {
  color: deeppink;
 }
 
-#mainbox {
- width: 970px;
- position: relative;
- overflow: hidden;
- top: 150px;
- left: 255px;
-}
-
-#imgbox {
- width: 300%;
- position: relative;
- left: 0;
- animation: slidemove 30s infinite;
-}
-
-#imgbox img {
- width: 33.33%;
- float: left;
-}
-
-@-webkit-keyframes slidemove {
-    0% {
-     left: 0;
+@media (min-width: 600px) {
+    main {
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+     position: absolute;
+     top: 140vh;
     }
-    25% {
-     left: -100%;
+    .info-1 {
+     grid-column: span 2;
+     grid-row: span 2;
     }
-    50% {
-     left: -200%;
+    .info-2 {
+     grid-column: span 2;
     }
-    75% {
-     left: -100%;
+    .figure-1 {
+     grid-column: span 3;
+     grid-row: span 2;
     }
-    100% {
-     left: 0;
+    .figure-6 {
+     grid-column: span 2;
+    }
+    .figure-7 {
+     grid-column: span 3;
     }
 }
 
-#bg {
+.figure-1 {
+  overflow: hidden;
+}
+
+.figure-2 {
+  overflow: hidden;
+}
+
+.figure-3 {
+  overflow: hidden;
+}
+
+.figure-4 {
+  overflow: hidden;
+}
+
+.figure-5 {
+  overflow: hidden;
+}
+
+.figure-6 {
+  overflow: hidden;
+}
+
+.figure-7 {
+  overflow: hidden;
+}
+
+.figure-8 {
+  overflow: hidden;
+}
+
+.figure-img {
+ display: block;
+ width: 100%;
  height: 100%;
- width: 70%;
- background: url(../img/notebook.png) no-repeat;
- background-size: 100%;
- margin-top: 130vh;
- position: absolute;
- left: 15%;
+ object-fit: cover;
+ margin: 0;
+ padding: 0;
+ transition: all .5s ease-in;
 }
+
+.figure-img:hover {
+ transform: scale(2.5);
+ transition: all .5s ease-in;
+ filter: brightness(.5);
+}
+
+.info-1, .info-2 {
+ padding: 40px;
+ background-color: #292727;
+ color: #fff;
+}
+
+h2 {
+ font-size: 45px;
+ font-family: 'Raleway', sans-serif;
+ margin-bottom: 1em;
+ margin-top: 50px;
+}
+
+p {
+ margin-bottom: 3em;
+ font-weight: lighter;
+ font-size: 25px;
+}
+
+.info-link {
+ text-decoration: none;
+ color: aqua;
+ font-size: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
